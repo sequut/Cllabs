@@ -22,7 +22,7 @@ public class Main {
         int n = Integer.parseInt(reader.readLine());
         Integer threshold = Integer.parseInt(reader.readLine());
         String corpora = Files.readString(Paths.get(absPath + "forKirill.txt"), Charset.forName("windows-1251"));
-        Dictionary dictionary = new Dictionary(absPath + "source/dict.opcorpora.xml");
+        Dictionary dictionary = new Dictionary(absPath + "dict.opcorpora.xml");
 
         System.out.println("Finding concordances...");
         Instant start = Instant.now();

@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) throws XMLStreamException, IOException {
         String absPath = "C:\\Users\\User\\IdeaProjects\\Cllabs\\clLabs\\src\\main\\java\\source\\";
-        Dictionary dictionary = new Dictionary(absPath + "source/dict.opcorpora.xml");
+        Dictionary dictionary = new Dictionary(absPath + "dict.opcorpora.xml");
         System.out.println("mapping size: " + dictionary.lemmaSupposed.size());
         HashMap<Lemma, Integer> frequency = new HashMap<>();
         HashMap<String, Integer> errorTokenFreq = new HashMap<>();
