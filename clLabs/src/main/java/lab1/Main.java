@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws XMLStreamException, IOException {
-        String absPath = "C:\\Users\\User\\IdeaProjects\\Cllabs\\clLabs\\src\\main\\java\\source\\";
+        String absPath = "C:\\Users\\User\\IdeaProjects\\Cllabs\\clLabs\\src\\Main\\java\\source\\";
         Dictionary dictionary = new Dictionary(absPath + "dict.opcorpora.xml");
         System.out.println("mapping size: " + dictionary.lemmaSupposed.size());
         HashMap<Lemma, Integer> frequency = new HashMap<>();

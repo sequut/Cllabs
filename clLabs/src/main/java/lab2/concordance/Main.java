@@ -14,15 +14,16 @@ import java.time.Instant;
 
 public class Main {
     public static void main(String[] args) throws IOException, XMLStreamException {
-        String absPath = "C:\\Users\\User\\IdeaProjects\\Cllabs\\clLabs\\src\\main\\java\\source\\";
+        String absPath = "C:\\Users\\User\\IdeaProjects\\Cllabs\\clLabs\\src\\Main\\java\\lab2\\";
+        String absPathToTexts = "C:\\Users\\User\\IdeaProjects\\Cllabs\\clLabs\\src\\Main\\java\\source\\";
 
         BufferedReader reader = new BufferedReader(
                 new FileReader(absPath + "input.txt"));
         String phrase = reader.readLine();
         int n = Integer.parseInt(reader.readLine());
         Integer threshold = Integer.parseInt(reader.readLine());
-        String corpora = Files.readString(Paths.get(absPath + "forKirill.txt"), Charset.forName("windows-1251"));
-        Dictionary dictionary = new Dictionary(absPath + "dict.opcorpora.xml");
+        String corpora = Files.readString(Paths.get(absPathToTexts + "texts.txt"), Charset.forName("windows-1251"));
+        Dictionary dictionary = new Dictionary(absPathToTexts + "dict.opcorpora.xml");
 
         System.out.println("Finding concordances...");
         Instant start = Instant.now();
